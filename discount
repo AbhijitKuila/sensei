@@ -1,0 +1,26 @@
+input('Enter your name:')
+print('Enter a 8 character long password.')
+o=input()
+def loop():
+   z=input() 
+   if len(z)==8:
+      print('Successful login.')
+   else:
+     print('Enter a 8 character long password.')
+     loop()
+
+if len(o)==8:
+  print('Successful login.')
+else:
+  print('Enter a 8 character long password.') 
+  loop()
+
+print('Type 1 for IND to USD or 2 for vice-versa.')
+x=input()
+y=input('Enter the desired amount:')
+if int(x)==1 :
+  a= round((float(y)/75.44),2)
+  print(f'The USD amount is {float(a)}.')
+else:
+  b= round((int(y)*75.44),2)
+  print(f'The IND amount is {float(b)}.')
